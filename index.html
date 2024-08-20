@@ -21,30 +21,14 @@
     </style>
 </head>
 <body>
-
+    <!--  -->
+    <!-- -->
     <div class="centralizar">
         <h1>Contador de Cliques</h1>
         <button id="clickButton">Clique aqui para adicionar!</button>
         <button id="clickButton1">Clique aqui para remover!</button>
         <p>Cliques: <span id="clickCount">0</span></p>
     </div>
-
-    <script>
-        let count = 0;
-
-        const button = document.getElementById('clickButton');
-        const button1 = document.getElementById('clickButton1');
-        const display = document.getElementById('clickCount');
-
-        button.addEventListener('click', () => {
-            count++;
-            display.textContent = count;
-        });
-
-        button1.addEventListener('click', () => {  // Aqui estava o erro, agora corrigido para addEventListener
-            count--;
-            display.textContent = count;
-        });
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
